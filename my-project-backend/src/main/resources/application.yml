@@ -1,10 +1,21 @@
 spring:
+  mail:
+    host: smtp.163.com
+    username: muaxiaokang@163.com
+    password: VEFPHWEMWNXMXCJN
+  rabbitmq:
+    addresses: localhost
+    username: admin
+    password: Mxk319527
+    virtual-host: /
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/study
     username: root
     password: Mxk319527
   security:
+    filter:
+      order: -100
     jwt:
       key: abandon
       expire: 7

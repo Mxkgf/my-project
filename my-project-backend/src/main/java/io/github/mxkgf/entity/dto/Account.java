@@ -15,6 +15,18 @@ public class Account {
     private String role;
     private Date registerTime;
 
+    public Account() {
+    }
+
+    public Account(Integer id, String username, String password, String email, String role, Date registerTime) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.role = role;
+        this.registerTime = registerTime;
+    }
+
     public Integer getId() {
         return id;
     }

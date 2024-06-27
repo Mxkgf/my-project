@@ -9,7 +9,11 @@
         </div>
         <div class="right-card">
           <div>
-            <router-view/>
+            <router-view v-slot="{ Component }">
+              <transition name="el-fade-in-linear" mode="out-in">
+                <component :is="Component"/>
+              </transition>
+            </router-view>
           </div>
         </div>
     </div>
